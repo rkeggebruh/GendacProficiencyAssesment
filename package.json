@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "axios": "^1.7.2",
+    "express": "^4.19.2",
+    "node": "^20.14.0"
+  },
+  "name": "gendac-proficiency-test",
+  "version": "1.0.0",
+  "description": "Gendac Proficiency Test Kegge",
+  "main": "script.js",
+  "scripts": {
+    "test": "run",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "keywords": []
+}

@@ -1,0 +1,369 @@
+/* general styling */
+@font-face {
+    font-family: 'Myriad Pro Bold';
+    src: url('./Fonts/Myriad Pro Bold/Myriad Pro Bold.ttf') format('truetype'); /* Correct format is 'truetype' */
+    font-weight: bold;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Myriad Pro Bold', Arial, sans-serif; /* Fall back to a safe font if Myriad Pro Bold is not found */
+    margin: 20px;
+}
+
+h1, h2 {
+    color: #2a59a5;
+    font-family: 'Myriad Pro Bold', Arial, sans-serif;
+}
+
+
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    display: inline-block;
+    width: 100px;
+}
+
+input {
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 200px;
+}
+
+button {
+    padding: 5px 10px;
+}
+
+#message {
+    margin-top: 20px;
+    color: green;
+}
+
+#product-list div {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+/* navbar styling */
+
+.navbar {
+    padding: 18px;
+    padding-left: 150px;
+    background: linear-gradient(0deg, #374047 0%, #5e6568 100%);
+}
+
+img {
+    padding-right: 20px;
+}
+
+#navbarItems {
+    padding-right: 150px;
+}
+
+#navbarItems li {
+    padding-left: 50px;
+    font-size: 1.4em;
+    color: white;
+}
+
+#gendacLogoText {
+    margin-left: 0px;
+    margin-bottom: 0;
+    font-size: 1.8rem;
+    color: white;
+}
+
+/* active navbar link */
+.navbar-light .navbar-nav .active>.nav-link {
+    color: rgb(126, 180, 190);
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: rgb(77, 145, 158);
+}
+
+
+
+
+
+/* intro/index styling */
+.intro {
+    width: 100%;
+    min-height: 80vh;
+    position: relative;
+    padding: 120px 0 50px 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  .intro h1 {
+    padding-bottom: 5px;
+    margin: 0;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+    color: white;
+  }
+  
+  .intro p {
+    color: #92c1d4;
+    margin: 5px 0 30px 0;
+    font-size: 22px;
+    line-height: 1.3;
+    font-weight: 600;
+  }
+
+  #btn-get-started {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    width: 250px;
+    font-weight: bold;
+    color: white;
+    background-color: #578395;
+    border: none;
+    border-radius: 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+#btn-get-started:hover {
+    background-color: #71a1b4;
+}
+
+  
+  .intro .animated {
+    animation: up-down 2s ease-in-out infinite alternate-reverse both;
+  }
+  
+  @media (max-width: 640px) {
+    .intro h1 {
+      font-size: 28px;
+      line-height: 36px;
+    }
+  
+    .intro p {
+      font-size: 18px;
+      line-height: 24px;
+      margin-bottom: 30px;
+    }
+  
+    .intro .btn-get-started,
+    .intro .btn-watch-video {
+      font-size: 13px;
+    }
+  }
+  
+  @keyframes up-down {
+    0% {
+      transform: translateY(10px);
+    }
+  
+    100% {
+      transform: translateY(-10px);
+    }
+  }
+
+
+
+/* loading */
+#loading {
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+}
+
+
+/* the pagination button that is currently selected */
+
+
+
+
+
+/* products styling */
+#products-body {
+    padding-top: 70px;
+}
+
+
+
+/* search bar */
+/* CSS for the clear button inside the search bar */
+.search-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+#search-input {
+  padding-right: 30px;
+}
+
+#clear-search {
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  display: none; /* Hide by default */
+  color: #ccc;
+  padding-bottom: 10px;
+  padding-right: 10px;
+}
+
+#search-input:not(:placeholder-shown) + #clear-search {
+  display: block; /* Show clear button when input is not empty */
+}
+
+/* Remove background and set icon color for search button */
+#search-button {
+  width: 30px;
+  background-color: transparent; /* Remove background */
+  border: none; /* Remove border */
+  padding: 0; /* Remove padding */
+}
+
+#search-button i {
+  color: white; /* Set icon color to black */
+}
+
+/* Change icon color to blue on hover */
+#search-button:hover i {
+  color: rgb(77, 145, 158);
+}
+
+
+
+/* pagination styling */
+.pagination {
+  text-align: right;
+  margin-bottom: 10px;
+  
+}
+
+#page-show{
+  color: white;
+}
+
+#page-show button{
+  color: white;
+}
+
+#page-show button:hover{
+  color: rgb(146, 199, 208);
+}
+
+.active-page {
+  text-decoration: underline;
+}
+
+
+
+
+
+
+
+#delete-button-div {
+  padding-top: 15px;
+}
+
+#indexBody {
+  background-color: #374047;
+}
+
+#prodBody {
+  background-color: #374047;
+}
+
+/* product table */
+/* table {
+  background-color: #7f95a7;
+  border-radius: 2em;
+} */
+
+
+
+
+
+
+
+/* table */
+/* Dark theme styling for table */
+table.table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #374047;
+  color: #fff;
+}
+
+table.table thead {
+  background-color: #525f69;
+}
+
+table.table thead th {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #555;
+  border-top: none;
+}
+
+table.table tbody tr {
+  border-bottom: 1px solid #555;
+}
+
+table.table tbody tr td {
+  padding: 10px;
+}
+
+table.table tbody tr:hover {
+  background-color: #3e4951;
+}
+
+
+/* select */
+input[type="checkbox"] {
+  height: 20px;
+}
+
+
+/* Custom button style */
+#filter-button,
+#fetch-products-button {
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 1.2em;
+    width: 250px;
+    font-weight: bold;
+    color: white;
+    background-color: #578395;
+    border: none;
+    border-radius: 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+#filter-button:hover,
+#fetch-products-button:hover {
+    background-color: #71a1b4;
+}
+
+#search-input {
+  width: 200px;
+  border-radius: 20px;
+}
+
+#filter-button {
+  margin-right: 10px;
+}
